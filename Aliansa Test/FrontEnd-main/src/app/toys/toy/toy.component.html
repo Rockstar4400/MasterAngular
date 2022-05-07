@@ -1,0 +1,62 @@
+
+<form (ngSubmit)="onSubmit(toyForm.value)" #toyForm="ngForm">
+    <fieldset class="form">
+    <legend>Product</legend>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>
+                <input 
+                type="text" 
+                class="large" 
+                ngModel
+                name="toyName" 
+                ></td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td>
+                <input 
+                type="text" 
+                class="short"  
+                ngModel
+                name="price"
+                ></td>
+        </tr>
+        <tr>
+            <td>Company</td>
+            <td><input 
+                type="text" 
+                class="large" 
+                ngModel
+                name="companyId" 
+                ></td>
+        </tr>
+        <tr>
+            <td>Maximun Age</td>
+            <td>
+                <input 
+                type="number" 
+                class="short"  
+                ngModel
+                name="ageRestriction"
+                ></td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td><textarea type="number" 
+                class="short"  
+                ngModel
+                name="description"></textarea></td>
+        </tr>
+    </table>
+    <table class="tableButtons">
+        <tr>
+            <td>
+                <button class="button" type="submit">Save</button>
+            </td>
+            <td><a class="button" (click)="onCancel()">Cancel</a></td>
+        </tr>
+    </table>
+</fieldset>
+</form>

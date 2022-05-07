@@ -1,0 +1,106 @@
+fieldset {
+    font-size: 20px;
+    textarea {
+        width: 200px;
+        height: 40px;
+        border: 2px solid;
+        padding: 16px;
+        border: 2px solid black;
+    }
+    .large {
+        width: 220px;
+    }
+    .short {
+        width: 80px;
+    }
+}
+
+.tableButtons {
+    position: relative;
+    top: 20px;
+    left: 172px;
+}
+
+input {
+    border: 2px solid;
+    padding: 6px;
+}
+
+td:first-child {
+    width: 100px;
+    font-size: 18px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 30px;
+    border: 2px solid black;
+    box-shadow: 5px 5px gray;
+    margin-bottom: 15px;
+    margin-left: 55px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin: 0;
+
+    &:hover {
+        cursor: pointer;
+    }
+    &:active {
+        top: 7px;
+        background-image: radial-gradient(25% 25% at 0 0, circle, hsla(0, 0%, 100%, 0.3), hsla(0, 0%, 0%, 0.3));
+        box-shadow: inset 0px 1px 0px #eaeee7, inset 0px -1px 0px #edf0ea;
+        color: #021820;
+        text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3);
+        background: white;
+    }
+}
+
+.form {
+    max-width: 300px;
+    background: #ffffff;
+    margin: 50px auto;
+    border-radius: 2px;
+    border: 3px solid black;
+    height: 255px;
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        li {
+            display: block;
+            margin-bottom: 10px;
+            min-height: 35px;
+
+            .field-style {
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                padding: 8px;
+                outline: none;
+                border: 1px solid #b0cfe0;
+            }
+            .field-style:focus {
+                box-shadow: 0 0 5px #b0cfe0;
+                border: 1px solid #b0cfe0;
+            }
+            .field-split {
+                width: 49%;
+            }
+            .field-full {
+                width: 100%;
+            }
+            input.align-left {
+                float: left;
+            }
+
+            input.align-right {
+                float: right;
+            }
+        }
+    }
+}

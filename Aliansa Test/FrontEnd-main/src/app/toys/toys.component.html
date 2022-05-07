@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <a [routerLink]="['/NewToy']" class="button">Add New+</a>
+        </div>
+        <div class="panel-table">
+            <table class="table">
+                <thead>
+                      <th>Id</th>
+                      <th>Name</th>
+                      <th>Age</th>
+                      <th>Price</th>
+                      <th>Company</th>
+                      <th></th>
+                </thead>
+                <tbody *ngIf="loadedToys.length >= 1">
+                    <tr *ngFor="let toys of loadedToys">
+                        <th>{{ toys.toyId }}</th>
+                        <td>{{ toys.toyName }}</td>
+                        <td>{{ toys.ageRestriction }}</td>
+                        <td>${{ toys.price }}</td>
+                        <td>{{ toys.description }}</td>
+                        <td><a href="#">Update</a>&nbsp;&nbsp;<a href="#">Delete</a>&nbsp;&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+  </div>
